@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Testing our driving application</title>
+	<link rel="stylesheet" type="text/css" href="mocha.css">
+</head>
+<body>
+	<div id="mocha"><p><a href=".">Index</a></p></div>
+	<div id="messages"></div>
+	<div id="fixtures"></div>
+	<script src="mocha.js"></script>
+	<script src="chai.js"></script>
+    <script src="sinon.js"></script>
+    
+    <!-- <script src="cow.js"></script> comment this out in place of driving scripts -->
+    <script src="../static/script/drive.js"></script>
+
+    <script>mocha.setup('bdd')</script>
+    
+    <!-- <script src="cow_test.js"></script> comment this out in place of driving tests -->
+    <script src="driving-tests.js"></script>
+
+	<script>mocha.run();</script>
+</body>
+</html>

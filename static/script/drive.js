@@ -71,6 +71,7 @@ function turnIt(car, direction, cmd) {
             break;
     }
 }
+
 function moveIt(car, direction, cmd){
     const MOVE_VALUE = 10;
     
@@ -125,10 +126,12 @@ function moveIt(car, direction, cmd){
 
 function getDirection(car) {
     var classes = car.className;
+
     var direction = "";
     if(classes.indexOf('north')>0) {direction = NORTH;}
     else if(classes.indexOf('south')>0) {direction = SOUTH;}
     else if(classes.indexOf('east')>0) {direction = EAST;}
     else if(classes.indexOf('west')>0) {direction = WEST;}
+
     return direction;
 }
